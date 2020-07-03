@@ -25,6 +25,7 @@ class playerDetailsVC: UIViewController {
         nameLabel.text = selectedPlayer.name
         imageView.image = UIImage(named: selectedPlayer.name)
         backgroundImageView.image = UIImage(named: selectedPlayer.bgName())
+    
         // Do any additional setup after loading the view.
     }
     

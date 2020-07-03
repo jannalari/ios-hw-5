@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // Do any additional setup after loading the view.
         //nextButton.isUserInteractionEnabled = false
        playBackgroundMusic(musicName: "BG.wav")
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
 
     @IBAction func randomPlayer(_ sender: Any) {
         let randomPlayer = players.randomElement()!
-        playerImageView.image = UIImage(named: randomPlayer.name)
+        playerImageView.loadGif(name: randomPlayer.name)
         playMusic(musicName: randomPlayer.musicName())
         selectedPlayer = randomPlayer
     }
